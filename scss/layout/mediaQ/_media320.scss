@@ -1,0 +1,31 @@
+/*-----------------------index 768px 320px-------------------------------*/
+
+@media(max-width:768px){
+    .fondoPrincipal{
+        h2{
+            font-size: 1.5625rem;
+        }
+        .sectionFormulario{
+            .fila1{
+                @include flex(column, center, center, none);
+            }
+            font-size: .75rem;
+            .botonComprar{
+                margin: 0;
+            }
+            .miClase{
+                font-size: .75rem;
+            }
+        }
+        .imgLink{
+            @include flex(column, center, center,.625rem);
+            a{
+                img{
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+
+}

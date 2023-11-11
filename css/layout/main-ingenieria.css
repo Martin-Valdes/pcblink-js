@@ -1,0 +1,17 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 26 |                     @include img(5%, 12.5rem,12.5rem, 0 12px 12px 0 rgba(0, 0, 0, 0.4));
+ *    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\layout\main-ingenieria.scss 26:21  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 26 \2502                      @include img(5%, 12.5rem,12.5rem, 0 12px 12px 0 rgba(0, 0, 0, 0.4));\a    \2502                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\main-ingenieria.scss 26:21  root stylesheet";
+}

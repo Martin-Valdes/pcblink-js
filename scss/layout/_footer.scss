@@ -1,0 +1,85 @@
+footer{
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(37, 47, 45);
+    padding: .3125rem;
+    width: 100%;
+    height: auto;
+    .iso9001{
+        align-items: center;
+    }
+    .tituloCtto{
+        h4{
+            font-size: 1.875rem;
+            text-align: center;
+            font-size: 1rem;
+            color: aliceblue;
+        }
+        p{
+            font-family: $font-family2;
+            color: aliceblue;
+            font-size: .875rem;
+            text-align: center;
+        }
+
+    }
+    .tituloCtto2{
+        p{
+            font-family: $font-family2;
+            color: aliceblue;
+            font-size: .875rem;
+            text-align: center;
+        }
+        h3{
+            font-size: 1.875rem;
+            text-align: center;
+            font-size: 1rem;
+            color:aliceblue;
+        }
+    }
+    .grupoIconos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1.25rem;
+        justify-content: center;
+        a{  
+            display: flex;
+            justify-content: center;
+            img{
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+    .logoAltium{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 50%;
+            height: 30%;
+            padding: .3125rem;
+        }
+    }
+    .definicion{
+        @include flex(row,center, center, .3125rem);
+        .tituloPie{
+            display: flex;
+            padding: .3125rem;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            P{
+                color: aliceblue;
+                font-family: $font-family1;
+                font-size: .875rem;
+                text-align: center;
+            }
+        }
+
+    }
+    .definicion2{
+        @include flex(row, center, center, .625rem);
+    }
+}

@@ -1,0 +1,79 @@
+.fondoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../assets/img/Rectangle 7.png");
+    background-color: black;
+    width: 100%;
+    min-height: calc(100vh - 5.3125rem - 10.625rem);
+    padding: 1.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2{
+        text-align: center;
+        font-size: 3.125rem;
+        color: bisque;
+    }
+    .sectionFormulario{
+        
+        background-color: rgb(93, 58, 120);
+        padding: 1.25rem;
+        color: aliceblue;
+        font-size: 1.875rem;
+        font-weight: bolder;
+        width: 90%;
+        height: 100%;
+        border-radius: 2%;
+        border-color: lawngreen;
+        border-style: groove;
+        .botonComprar{
+            margin: 2.5rem;
+            width: 12.5rem;
+            height: 6.25rem;
+            background-color: aliceblue;
+            border-radius: .3125rem;
+            margin-left: 31.25rem;
+            
+        }
+        .letraComprar{
+            color: black;
+            font-family: $font-family4;
+            border-color: aqua;
+            border-style:groove;
+            
+            
+            
+        }
+        .miClase{
+            font-size: 1rem;
+            font-family: $font-family4;
+            text-align: center;
+            background-color: rgb(185, 159, 197);
+            border-color: gold;
+        }
+
+        p{
+            color: black;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+    }
+    .imgLink{
+        @include flex(none, space-between, center, none);
+        width: 80%;
+        padding: 1.25rem;
+        a {
+            img{
+                transition: width 0.5s, height 0.5s;
+                border-radius: 5%;
+                width: 10rem;
+                height: 10rem;
+            }
+            img:hover{
+                width: 12.5rem;
+                height: 12.5rem;
+            }
+        }
+    }
+
+}

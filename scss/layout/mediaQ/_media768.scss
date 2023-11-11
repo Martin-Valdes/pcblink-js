@@ -1,0 +1,339 @@
+
+@media(max-width:768px){
+    
+/*---------------------------Header 768px 320px-----------------------------*/
+header{
+    .letraHeader{
+        font-size: 1.25rem;
+        li{
+            padding: .625rem;
+            a:hover{
+                color: red;
+            }
+        }
+    }
+    .whatsapp{
+        display: none;
+    }
+}
+/*---------------------------footer 768px 320px-----------------------------*/
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(37, 47, 45);
+    padding: .3125rem;
+    width: 100%;
+    height: 100%;
+
+.logoPie{
+        p{
+        color:aliceblue;
+        font-family: 'Inknut Antiqua', serif;
+        }
+}
+.tituloCtto2 {
+        p{
+        font-family: 'Inter', sans-serif;
+        color: aliceblue;
+        font-size: .875rem;
+        text-align: center;
+        }
+}
+
+.tituloCtto2 {
+        h3{
+        font-size: 1.875rem;
+        text-align: center;
+        font-size: 1rem;
+        }
+}
+
+.logoIconos{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.logoAltium{
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 50%;
+        height: 30%;
+        padding: .3125rem;
+        }
+
+}
+.grupoIconos{
+    a{
+        img{
+            width: 50%;
+            height: 50%;
+            }
+    }
+    
+}
+.grupoIconos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1.25rem;
+    justify-content: center;
+    a{
+    display: flex;
+    justify-content: center;
+    }
+}
+.definicion{
+    @include flex(column,center, center, .3125rem);
+    .iso9001{
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 2.5rem;
+            height: 5rem;
+            }
+    }
+    .tituloPie {
+        padding: .3125rem;
+        justify-content: center;
+        align-items: center;
+        
+        p{
+            color: aliceblue;
+            font-family: 'Inknut Antiqua', serif;
+            font-size: .75rem;
+            text-align: center;
+            
+            
+        }
+        
+    }
+    
+
+}
+.definicion2{
+    @include flex(column, center, center, .625rem);
+    padding-top: .625rem;
+    .tituloCtto{
+        h4{
+            font-size: 1.875rem;
+            text-align: center;
+            font-size: 1rem;
+            margin: 0;
+            }
+        p{
+            font-family: 'Inter', sans-serif;
+            color: aliceblue;
+            font-size: .875rem;
+            text-align: center;
+            margin: 0;
+            }
+}
+}
+}
+
+/*---------------------------Empresa 768px 320px---------------------------------*/
+.cuerpoEmpresa{
+    
+    .parrafo p{
+        font-size: .75rem;
+        background-color: rgba(34, 44, 190, 0.103);
+        font-family: $font-family1;
+    }
+
+    .imgEmpresa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+            height: 80%;
+            padding: .625rem;
+        }
+    }
+}
+/*-----------------------Contacto 768px 320px-------------------------------*/
+.cuerpoPrueba{
+    .caja {
+        p{
+            font-size: .875rem;
+        }
+    }
+    .formularioUno{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*-----------------------Productos 768px 320px-------------------------------*/
+
+.productoCategoria{
+    h2 .titulo{
+        padding: .625rem;
+        font-size: 1.5625rem;
+        color: rgb(32, 1, 1);
+    }
+    .galeria{
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "foto1 foto2"
+        "foto3 foto4"
+        "foto5 foto6"
+        "foto7 foto8";
+        row-gap: 5rem;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            a{
+                img{
+                    border-radius: 5%;
+                    width: 9.375rem;
+                    height: 9.375rem;
+                }
+            }
+        }
+    }
+
+}
+
+/*-----------------------index 768px 320px-------------------------------*/
+
+.fondoPrincipal{
+    h2{
+        font-size: 1.5625rem;
+    }
+    .sectionFormulario{
+        padding: 0;
+        padding-top: .625rem;
+        width: 90%;
+        .fila1{
+            @include flex(column, center, center, none);
+        }
+        font-size: .75rem;
+        .botonComprar{
+            font-size: .75rem;
+            width: 100%;
+            padding-top: .625rem;
+            margin: 0;
+        }
+        .cotizarLargo{
+            @include flex(column,center,center,none);
+        }
+        .miClase{
+            font-size: .75rem;
+        }
+    }
+    .imgLink{
+        @include flex(row, center, center,.625rem);
+        a{
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+}
+/*-----------------------INGENIERIA 768px 320px-------------------------------*/
+.cuerpo{
+    padding-top: .9375rem;
+    padding-bottom: .9375rem;
+    background: rgb(4,59,53);
+    background: linear-gradient(67deg, rgba(4,59,53,1) 0%, rgba(4,59,53,1) 28%, rgba(56,133,124,1) 62%);
+    
+    .palabrasBlancas{
+        background: rgb(4,59,53);
+        background: linear-gradient(67deg, rgba(4,59,53,1) 0%, rgba(4,59,53,1) 28%, rgba(56,133,124,1) 62%);
+        background-image: none;
+        grid-template-columns:  auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "a aut"
+        "m p"
+        "imp pro";
+        font-size: .75rem;
+        
+        padding: 0;
+        
+        .diseno{
+            padding: 0;
+            a{
+                img{
+                    width: 9.375rem;
+                    height: 9.375rem;
+                }
+            }
+            p{
+                color: aliceblue;
+            }
+        }
+        .automatismos{
+            padding: 0;
+            a{
+                img{
+                    width: 9.375rem;
+                    height: 9.375rem;
+                }
+            }
+            p{
+                color: aliceblue;
+            }
+        }
+        .cnc{
+            padding: 0;
+            a{
+                img{
+                    width: 9.375rem;
+                    height: 9.375rem;
+                }
+            }
+            p{
+                color: aliceblue;
+            }
+        }
+        .prototipado{
+            padding: 0;
+            a{
+                img{
+                    width: 9.375rem;
+                    height: 9.375rem;
+                }
+            }
+            p{
+                color: aliceblue;
+            }
+        }
+        .impresion{
+            padding: 0;
+            a{
+                img{
+                    width: 9.375rem;
+                    height: 9.375rem;
+                }
+            }
+            p{
+                color: aliceblue;
+            }
+        }
+        .fabricacion{
+            padding: 0;
+            a{
+                img{
+                    width: 9.375rem;
+                    height: 9.375rem;
+                }
+            }
+            p{
+                color: aliceblue;
+            }
+        }
+
+    }
+
+}
+}

@@ -1,0 +1,22 @@
+@mixin flex($direction, $justify, $align, $gap){
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+
+}
+
+@mixin texto($color, $size, $aligne){
+    color: $color;
+    font-size: $size;
+    text-align: $aligne;
+}
+
+@mixin img($border-radius, $width, $height, $box-shadow){
+    border-radius: $border-radius;
+    width: $width;
+    height: $height;
+    box-shadow: $box-shadow;
+}

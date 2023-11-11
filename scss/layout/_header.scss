@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    background-color: rgb(37, 47, 45);
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 1.25rem;
+    .whatsapp{
+        img{
+        position: fixed;
+        bottom: 4.375rem;
+        right: 1.875rem;
+        }
+    }
+    .logoHead{
+        h1{
+            display: none;
+        }
+        img{
+            width: 12.5rem;
+            align-items: center;
+            padding: 1.25rem;
+        }
+    }
+        
+    .navbar{
+        display: flex;
+        list-style: none;
+        gap: .3125rem;
+        li{
+            list-style: none;
+            display: inline;
+            padding-left: .3125rem;
+            text-align: left;
+            padding-right: 1.25rem;
+            
+            a{
+                text-decoration: none;
+                color: aliceblue;
+            }
+            a:hover{
+                font-size: 1.125rem;
+                color: green;
+            }
+            
+            
+            }
+        }
+    
+}

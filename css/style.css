@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Inter:wght@300&family=Tinos:ital,wght@0,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inknut+Antiqua:wght@300&family=Russo+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  background-color: #252f2d;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 1.25rem; }
+  header .whatsapp img {
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.875rem; }
+  header .logoHead h1 {
+    display: none; }
+  header .logoHead img {
+    width: 12.5rem;
+    align-items: center;
+    padding: 1.25rem; }
+  header .navbar {
+    display: flex;
+    list-style: none;
+    gap: .3125rem; }
+    header .navbar li {
+      list-style: none;
+      display: inline;
+      padding-left: .3125rem;
+      text-align: left;
+      padding-right: 1.25rem; }
+      header .navbar li a {
+        text-decoration: none;
+        color: aliceblue; }
+      header .navbar li a:hover {
+        font-size: 1.125rem;
+        color: green; }
+
+.fondoPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/img/Rectangle 7.png");
+  background-color: black;
+  width: 100%;
+  min-height: calc(100vh - 5.3125rem - 10.625rem);
+  padding: 1.25rem;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .fondoPrincipal h2 {
+    text-align: center;
+    font-size: 3.125rem;
+    color: bisque; }
+  .fondoPrincipal .sectionFormulario {
+    background-color: #5d3a78;
+    padding: 1.25rem;
+    color: aliceblue;
+    font-size: 1.875rem;
+    font-weight: bolder;
+    width: 90%;
+    height: 100%;
+    border-radius: 2%;
+    border-color: lawngreen;
+    border-style: groove; }
+    .fondoPrincipal .sectionFormulario .botonComprar {
+      margin: 2.5rem;
+      width: 12.5rem;
+      height: 6.25rem;
+      background-color: aliceblue;
+      border-radius: .3125rem;
+      margin-left: 31.25rem; }
+    .fondoPrincipal .sectionFormulario .letraComprar {
+      color: black;
+      font-family: "Russo One", sans-serif;
+      border-color: aqua;
+      border-style: groove; }
+    .fondoPrincipal .sectionFormulario .miClase {
+      font-size: 1rem;
+      font-family: "Russo One", sans-serif;
+      text-align: center;
+      background-color: #b99fc5;
+      border-color: gold; }
+    .fondoPrincipal .sectionFormulario p {
+      color: black;
+      font-size: 1.25rem;
+      text-align: center; }
+  .fondoPrincipal .imgLink {
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: none;
+    width: 80%;
+    padding: 1.25rem; }
+    .fondoPrincipal .imgLink a img {
+      transition: width 0.5s, height 0.5s;
+      border-radius: 5%;
+      width: 10rem;
+      height: 10rem; }
+    .fondoPrincipal .imgLink a img:hover {
+      width: 12.5rem;
+      height: 12.5rem; }
+
+.cuerpoEmpresa {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 5.3125rem - 10.625rem);
+  margin: auto;
+  align-items: center;
+  background: #eeaeca;
+  background: linear-gradient(52deg, #eeaeca 0%, #095229 0%, #bcd1eb 100%);
+  padding: 1.25rem; }
+  .cuerpoEmpresa .parrafo {
+    text-align: center;
+    font-size: 1.5625rem;
+    background-color: rgba(34, 44, 190, 0.103);
+    font-family: "Tinos", serif; }
+  .cuerpoEmpresa .imgEmpresa {
+    margin: .625rem; }
+    .cuerpoEmpresa .imgEmpresa img {
+      padding: 3.75rem; }
+
+.cuerpoPrueba {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 5.3125rem - 10.625rem);
+  flex-direction: column;
+  background-image: url("../assets/img/empresa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center; }
+  .cuerpoPrueba h2 {
+    font-family: "Russo One", sans-serif; }
+  .cuerpoPrueba .foto {
+    padding: 1.25rem;
+    background-color: rgba(128, 128, 128, 0.493);
+    border-radius: 5%;
+    border-color: royalblue;
+    border-style: groove; }
+    .cuerpoPrueba .foto .botonFormulario {
+      align-items: center;
+      font-size: 1.25rem;
+      text-align: center;
+      padding: 1.25rem; }
+  .cuerpoPrueba .caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    border-radius: 6%;
+    width: 80%;
+    height: 50%;
+    box-shadow: none;
+    margin-top: 1.875rem;
+    background-color: rgba(222, 184, 135, 0.575);
+    padding: 1.25rem;
+    margin-bottom: .625rem; }
+    .cuerpoPrueba .caja p {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 1.125rem;
+      font-family: "Inknut Antiqua", serif; }
+
+.cuerpo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 5.3125rem - 10.625rem);
+  background-color: #1A4D99; }
+  .cuerpo .palabrasBlancas {
+    background-image: url("../assets/img/proyecto3.jpg");
+    background-position: center;
+    background-size: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "a aut imp" "m p pro";
+    text-align: center; }
+    .cuerpo .palabrasBlancas .diseno, .cuerpo .palabrasBlancas .automatismos, .cuerpo .palabrasBlancas .fabricacion, .cuerpo .palabrasBlancas .impresion, .cuerpo .palabrasBlancas .cnc, .cuerpo .palabrasBlancas .prototipado {
+      grid-area: a;
+      padding: 1.25rem;
+      color: #08181b; }
+      .cuerpo .palabrasBlancas .diseno a img, .cuerpo .palabrasBlancas .automatismos a img, .cuerpo .palabrasBlancas .fabricacion a img, .cuerpo .palabrasBlancas .impresion a img, .cuerpo .palabrasBlancas .cnc a img, .cuerpo .palabrasBlancas .prototipado a img {
+        transition: width 0.5s, height 0.5s;
+        border-radius: 5%;
+        width: 12.5rem;
+        height: 12.5rem;
+        box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.4); }
+        .cuerpo .palabrasBlancas .diseno a img:hover, .cuerpo .palabrasBlancas .automatismos a img:hover, .cuerpo .palabrasBlancas .fabricacion a img:hover, .cuerpo .palabrasBlancas .impresion a img:hover, .cuerpo .palabrasBlancas .cnc a img:hover, .cuerpo .palabrasBlancas .prototipado a img:hover {
+          width: 15.625rem;
+          height: 15.625rem; }
+    .cuerpo .palabrasBlancas .automatismos {
+      grid-area: aut;
+      color: #08181b;
+      padding: 1.25rem; }
+    .cuerpo .palabrasBlancas .fabricacion {
+      grid-area: m;
+      color: #08181b;
+      padding: 1.25rem; }
+    .cuerpo .palabrasBlancas .impresion {
+      grid-area: imp;
+      color: #08181b;
+      padding: 1.25rem; }
+    .cuerpo .palabrasBlancas .cnc {
+      grid-area: p;
+      color: #08181b;
+      padding: 1.25rem; }
+    .cuerpo .palabrasBlancas .prototipado {
+      grid-area: pro;
+      color: #08181b;
+      padding: 1.25rem; }
+
+.productoCategoria {
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #0b0ba3 0%, #00d4ff 100%);
+  width: 100%;
+  min-height: calc(100vh - 5.3125rem - 10.625rem); }
+  .productoCategoria h2 {
+    text-align: center;
+    color: #19FF72;
+    font-size: 3.125rem;
+    font-family: "Russo One", sans-serif; }
+  .productoCategoria .galeria {
+    display: grid;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8";
+    row-gap: 6.25rem;
+    column-gap: .625rem;
+    padding-bottom: 1.25rem;
+    padding-top: 1.875rem;
+    color: aliceblue; }
+    .productoCategoria .galeria div a img {
+      transition: width 0.5s, height 0.5s;
+      border-radius: 5%;
+      width: 10rem;
+      height: 10rem; }
+      .productoCategoria .galeria div a img:hover {
+        width: 12.5rem;
+        height: 12.5rem; }
+    .productoCategoria .galeria div a p {
+      font-size: 1rem;
+      font-family: "Inknut Antiqua", serif; }
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 5.3125rem - 10.625rem);
+  background-size: cover;
+  background-color: #364542; }
+  main .back404 {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    padding-top: .625rem; }
+    main .back404 img {
+      width: 90%;
+      background-repeat: no-repeat;
+      background-size: auto; }
+  main .textoMain {
+    text-align: center;
+    background-color: #364542;
+    padding-bottom: 1.875rem; }
+    main .textoMain h1 {
+      font-size: 2.5rem;
+      font-family: "Russo One", sans-serif;
+      color: red; }
+    main .textoMain p {
+      font-size: 1.875rem;
+      font-family: "Tinos", serif;
+      color: #66e21f; }
+    main .textoMain a {
+      list-style: none; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #252f2d;
+  padding: .3125rem;
+  width: 100%;
+  height: auto; }
+  footer .iso9001 {
+    align-items: center; }
+  footer .tituloCtto h4 {
+    font-size: 1.875rem;
+    text-align: center;
+    font-size: 1rem;
+    color: aliceblue; }
+  footer .tituloCtto p {
+    font-family: "Inter", sans-serif;
+    color: aliceblue;
+    font-size: .875rem;
+    text-align: center; }
+  footer .tituloCtto2 p {
+    font-family: "Inter", sans-serif;
+    color: aliceblue;
+    font-size: .875rem;
+    text-align: center; }
+  footer .tituloCtto2 h3 {
+    font-size: 1.875rem;
+    text-align: center;
+    font-size: 1rem;
+    color: aliceblue; }
+  footer .grupoIconos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1.25rem;
+    justify-content: center; }
+    footer .grupoIconos a {
+      display: flex;
+      justify-content: center; }
+      footer .grupoIconos a img {
+        width: 50%;
+        height: 50%; }
+  footer .logoAltium {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .logoAltium img {
+      width: 50%;
+      height: 30%;
+      padding: .3125rem; }
+  footer .definicion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem; }
+    footer .definicion .tituloPie {
+      display: flex;
+      padding: .3125rem;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      footer .definicion .tituloPie P {
+        color: aliceblue;
+        font-family: "Inknut Antiqua", serif;
+        font-size: .875rem;
+        text-align: center; }
+  footer .definicion2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem; }
+
+/*-----------------------index 768px 320px-------------------------------*/
+@media (max-width: 768px) {
+  .fondoPrincipal h2 {
+    font-size: 1.5625rem; }
+  .fondoPrincipal .sectionFormulario {
+    font-size: .75rem; }
+    .fondoPrincipal .sectionFormulario .fila1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: none; }
+    .fondoPrincipal .sectionFormulario .botonComprar {
+      margin: 0; }
+    .fondoPrincipal .sectionFormulario .miClase {
+      font-size: .75rem; }
+  .fondoPrincipal .imgLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem; }
+    .fondoPrincipal .imgLink a img {
+      width: 5rem;
+      height: 5rem; } }
+
+@media (max-width: 768px) {
+  /*---------------------------Header 768px 320px-----------------------------*/
+  header .letraHeader {
+    font-size: 1.25rem; }
+    header .letraHeader li {
+      padding: .625rem; }
+      header .letraHeader li a:hover {
+        color: red; }
+  header .whatsapp {
+    display: none; }
+  /*---------------------------footer 768px 320px-----------------------------*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #252f2d;
+    padding: .3125rem;
+    width: 100%;
+    height: 100%; }
+    footer .logoPie p {
+      color: aliceblue;
+      font-family: 'Inknut Antiqua', serif; }
+    footer .tituloCtto2 p {
+      font-family: 'Inter', sans-serif;
+      color: aliceblue;
+      font-size: .875rem;
+      text-align: center; }
+    footer .tituloCtto2 h3 {
+      font-size: 1.875rem;
+      text-align: center;
+      font-size: 1rem; }
+    footer .logoIconos {
+      display: flex;
+      flex-direction: row; }
+    footer .logoAltium {
+      align-items: center;
+      justify-content: center; }
+      footer .logoAltium img {
+        width: 50%;
+        height: 30%;
+        padding: .3125rem; }
+    footer .grupoIconos a img {
+      width: 50%;
+      height: 50%; }
+    footer .grupoIconos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 1.25rem;
+      justify-content: center; }
+      footer .grupoIconos a {
+        display: flex;
+        justify-content: center; }
+    footer .definicion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3125rem; }
+      footer .definicion .iso9001 {
+        justify-content: center;
+        align-items: center; }
+        footer .definicion .iso9001 img {
+          width: 2.5rem;
+          height: 5rem; }
+      footer .definicion .tituloPie {
+        padding: .3125rem;
+        justify-content: center;
+        align-items: center; }
+        footer .definicion .tituloPie p {
+          color: aliceblue;
+          font-family: 'Inknut Antiqua', serif;
+          font-size: .75rem;
+          text-align: center; }
+    footer .definicion2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+      padding-top: .625rem; }
+      footer .definicion2 .tituloCtto h4 {
+        font-size: 1.875rem;
+        text-align: center;
+        font-size: 1rem;
+        margin: 0; }
+      footer .definicion2 .tituloCtto p {
+        font-family: 'Inter', sans-serif;
+        color: aliceblue;
+        font-size: .875rem;
+        text-align: center;
+        margin: 0; }
+  /*---------------------------Empresa 768px 320px---------------------------------*/
+  .cuerpoEmpresa .parrafo p {
+    font-size: .75rem;
+    background-color: rgba(34, 44, 190, 0.103);
+    font-family: "Inknut Antiqua", serif; }
+  .cuerpoEmpresa .imgEmpresa {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .cuerpoEmpresa .imgEmpresa img {
+      width: 100%;
+      height: 80%;
+      padding: .625rem; }
+  /*-----------------------Contacto 768px 320px-------------------------------*/
+  .cuerpoPrueba .caja p {
+    font-size: .875rem; }
+  .cuerpoPrueba .formularioUno {
+    display: flex;
+    flex-direction: column; }
+  /*-----------------------Productos 768px 320px-------------------------------*/
+  .productoCategoria h2 .titulo {
+    padding: .625rem;
+    font-size: 1.5625rem;
+    color: #200101; }
+  .productoCategoria .galeria {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8";
+    row-gap: 5rem; }
+    .productoCategoria .galeria div {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center; }
+      .productoCategoria .galeria div a img {
+        border-radius: 5%;
+        width: 9.375rem;
+        height: 9.375rem; }
+  /*-----------------------index 768px 320px-------------------------------*/
+  .fondoPrincipal h2 {
+    font-size: 1.5625rem; }
+  .fondoPrincipal .sectionFormulario {
+    padding: 0;
+    padding-top: .625rem;
+    width: 90%;
+    font-size: .75rem; }
+    .fondoPrincipal .sectionFormulario .fila1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: none; }
+    .fondoPrincipal .sectionFormulario .botonComprar {
+      font-size: .75rem;
+      width: 100%;
+      padding-top: .625rem;
+      margin: 0; }
+    .fondoPrincipal .sectionFormulario .cotizarLargo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: none; }
+    .fondoPrincipal .sectionFormulario .miClase {
+      font-size: .75rem; }
+  .fondoPrincipal .imgLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem; }
+    .fondoPrincipal .imgLink a img {
+      width: 5rem;
+      height: 5rem; }
+  /*-----------------------INGENIERIA 768px 320px-------------------------------*/
+  .cuerpo {
+    padding-top: .9375rem;
+    padding-bottom: .9375rem;
+    background: #043b35;
+    background: linear-gradient(67deg, #043b35 0%, #043b35 28%, #38857c 62%); }
+    .cuerpo .palabrasBlancas {
+      background: #043b35;
+      background: linear-gradient(67deg, #043b35 0%, #043b35 28%, #38857c 62%);
+      background-image: none;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas: "a aut" "m p" "imp pro";
+      font-size: .75rem;
+      padding: 0; }
+      .cuerpo .palabrasBlancas .diseno, .cuerpo .palabrasBlancas .automatismos, .cuerpo .palabrasBlancas .fabricacion, .cuerpo .palabrasBlancas .impresion, .cuerpo .palabrasBlancas .cnc, .cuerpo .palabrasBlancas .prototipado {
+        padding: 0; }
+        .cuerpo .palabrasBlancas .diseno a img, .cuerpo .palabrasBlancas .automatismos a img, .cuerpo .palabrasBlancas .fabricacion a img, .cuerpo .palabrasBlancas .impresion a img, .cuerpo .palabrasBlancas .cnc a img, .cuerpo .palabrasBlancas .prototipado a img {
+          width: 9.375rem;
+          height: 9.375rem; }
+        .cuerpo .palabrasBlancas .diseno p, .cuerpo .palabrasBlancas .automatismos p, .cuerpo .palabrasBlancas .fabricacion p, .cuerpo .palabrasBlancas .impresion p, .cuerpo .palabrasBlancas .cnc p, .cuerpo .palabrasBlancas .prototipado p {
+          color: aliceblue; }
+      .cuerpo .palabrasBlancas .automatismos {
+        padding: 0; }
+        .cuerpo .palabrasBlancas .automatismos a img {
+          width: 9.375rem;
+          height: 9.375rem; }
+        .cuerpo .palabrasBlancas .automatismos p {
+          color: aliceblue; }
+      .cuerpo .palabrasBlancas .cnc {
+        padding: 0; }
+        .cuerpo .palabrasBlancas .cnc a img {
+          width: 9.375rem;
+          height: 9.375rem; }
+        .cuerpo .palabrasBlancas .cnc p {
+          color: aliceblue; }
+      .cuerpo .palabrasBlancas .prototipado {
+        padding: 0; }
+        .cuerpo .palabrasBlancas .prototipado a img {
+          width: 9.375rem;
+          height: 9.375rem; }
+        .cuerpo .palabrasBlancas .prototipado p {
+          color: aliceblue; }
+      .cuerpo .palabrasBlancas .impresion {
+        padding: 0; }
+        .cuerpo .palabrasBlancas .impresion a img {
+          width: 9.375rem;
+          height: 9.375rem; }
+        .cuerpo .palabrasBlancas .impresion p {
+          color: aliceblue; }
+      .cuerpo .palabrasBlancas .fabricacion {
+        padding: 0; }
+        .cuerpo .palabrasBlancas .fabricacion a img {
+          width: 9.375rem;
+          height: 9.375rem; }
+        .cuerpo .palabrasBlancas .fabricacion p {
+          color: aliceblue; } }
