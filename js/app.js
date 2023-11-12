@@ -6,7 +6,6 @@ btn.addEventListener("click" , construir);
 const saleBtn = document.querySelector('#button-addon2');
 saleBtn.addEventListener("click" , confirmSale);
 let material2 = document.getElementById("valorCalculado");
-
 let costTruehold;
 let costMaterial;
 let costLayer;
@@ -38,7 +37,6 @@ function construir(){
     let largo         = document.getElementById("largo").value;
     let ancho         = document.getElementById("ancho").value;
     
-
     class nuevoObjeto {
         constructor(campoTruehold, material, numeroCapas, colorMascara, cantidad, grosor,
                             envio, pais,largo, ancho){
@@ -70,29 +68,12 @@ function storageRecover(key){
     const userLocal = JSON.parse(localStorage.getItem(key));
     return userLocal;
 }
-//Agregaando a la lista de cotizaciones 
-
-// function insersionList (saleAdd){
-//     let saleList = document.getElementById("accordionFlushExample");
-//     saleList.innerHTML += `
-//                         <div class="accordion-item">
-//                         <h2 class="accordion-header">
-//                             <button id="nuevaCompra" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-//                             PCB Ancho:${saleAdd.largo} Largo: ${saleAdd.ancho} Material: ${saleAdd.material} Perforacion: ${saleAdd.campoTruehold} Tipo de Envio: ${saleAdd.envio}
-//                             </button>
-//                         </h2>
-//                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-//                             <div class="accordion-body">PCB de largo </div>
-//                         </div>
-//                         </div>
-//         `; 
-// }
 //resumimos los campos seleccionado y los guardamos en variables globales para tratamiento. tambien verifica que en todos se hayan seleccionado los campos.
 
 function valorOption(numberOption){
     if (!(numberOption.campoTruehold == "True Hole" || numberOption.cantidad == "Cantidad" || numberOption.colorMascara == "Color de Mascara" || numberOption.envio == "Tipo de Envio" || numberOption.grosor == "Grosor de Placa" || numberOption.material == "Material" || numberOption.numeroCapas == "N° de Capas" || numberOption.pais == "Pais")){
-        if(numberOption.campoTruehold == "SI"){costTruehold = 5}else{costTruehold = 1}
-        if(numberOption.material == "FR-4"){costMaterial = 5}else{costMaterial =3}
+        costTruehold = (numberOption.campoTruehold == "SI") ? 5 : 1;
+        costMaterial = (numberOption.material == "FR-4") ? 5 : 3;
         if(numberOption.numeroCapas == "1"){
             costLayer = 1
             }else if(numberOption.numeroCapas == 2){
@@ -100,9 +81,6 @@ function valorOption(numberOption){
             }else if(numberOption.numeroCapas == 4){
                 costLayer = 5;
             }else{costLayer = 6}
-        if(numberOption.campoTruehold == "SI"){
-            costTruehold = 5
-        }else{costTruehold = 1}
         if(numberOption.grosor == "1.4"){
                 costQuality = 2;
             }else if(numberOption.grosor == "1.8"){
@@ -120,13 +98,9 @@ function valorOption(numberOption){
             }else{
                 costCountry = 15}
             cotizacion = ((((((numberOption.ancho*numberOption.largo)*0.0005)*costMaterial))*1/*costUnit*/  + (costCountry*costshipping)));
-            if (storageRecover("encargue")){
-            inputSales = storageRecover("encargue")
-            }
             inputSales.push(numberOption)
             storageSave('encargue', inputSales);
             viewSales();
-            // Swal.fire("SweetAlert2 is working!");
             totalAmount += cotizacion;
             storageSave('amount', totalAmount);
             material2.innerHTML = `<p>U$D ${cotizacion.toFixed(2)}</p>`;

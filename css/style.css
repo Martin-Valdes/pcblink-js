@@ -46,9 +46,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../assets/img/Rectangle 7.png");
   background-color: black;
-  width: 100%;
+  width: 90%;
   min-height: calc(100vh - 5.3125rem - 10.625rem);
   padding: 1.25rem;
   background-repeat: no-repeat;
@@ -58,6 +57,10 @@ header {
     font-size: 3.125rem;
     color: bisque; }
   .fondoPrincipal .sectionFormulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #5d3a78;
     padding: 1.25rem;
     color: aliceblue;
@@ -78,8 +81,16 @@ header {
     .fondoPrincipal .sectionFormulario .letraComprar {
       color: black;
       font-family: "Russo One", sans-serif;
-      border-color: aqua;
+      border-color: #95ff00;
       border-style: groove; }
+    .fondoPrincipal .sectionFormulario .accordion {
+      height: auto;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem; }
+      .fondoPrincipal .sectionFormulario .accordion .accordion-item h2 .accordion-button {
+        background-color: #6f6f6f; }
     .fondoPrincipal .sectionFormulario .miClase {
       font-size: 1rem;
       font-family: "Russo One", sans-serif;

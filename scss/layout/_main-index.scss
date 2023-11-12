@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../assets/img/Rectangle 7.png");
     background-color: black;
-    width: 100%;
+    width: 90%;
     min-height: calc(100vh - 5.3125rem - 10.625rem);
     padding: 1.25rem;
     background-repeat: no-repeat;
@@ -15,7 +14,10 @@
         color: bisque;
     }
     .sectionFormulario{
-        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         background-color: rgb(93, 58, 120);
         padding: 1.25rem;
         color: aliceblue;
@@ -38,11 +40,25 @@
         .letraComprar{
             color: black;
             font-family: $font-family4;
-            border-color: aqua;
+            border-color: rgb(149, 255, 0);
             border-style:groove;
-            
-            
-            
+        }
+        .accordion{
+            height: auto;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding: 1.25rem;
+            .accordion-item{
+                h2{
+                    
+                    .accordion-button{
+                        background-color: rgb(111, 111, 111);
+                        
+                    }
+                    
+                }
+            }
         }
         .miClase{
             font-size: 1rem;
